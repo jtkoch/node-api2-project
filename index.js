@@ -1,8 +1,10 @@
 const express = require("express")
-const postsRouter = require("./routes/posts-router")
+const cors = require("cors")
 const server = express()
+const postsRouter = require("./routes/posts-router")
 const port = 4000
 
+server.use(cors())
 server.use(express.json())
 server.use("/api/posts", postsRouter)
 
