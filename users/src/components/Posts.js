@@ -29,12 +29,12 @@ const Posts = () => {
         <Container style={{ margin: '50px auto' }} className="card-wrapper">
           <Row>
             <Col xs="12" lg={{ size: 4, offset: 4 }}>
-              <Card key={post.id}>
-                <CardTitle>
+              <Card className="card" key={post.id}>
+                <CardTitle className="card-title">
                   Quote: {post.title}
                 </CardTitle>
                 <CardText>
-                  {post.title}
+                  {post.contents}
                 </CardText>
               </Card>
             </Col>

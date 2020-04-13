@@ -5,7 +5,7 @@ import Posts from './components/Posts';
 function App() {
   return (
     <div className="App">
-      <h1>Lord of the Ring Quotes</h1>
+      <h1>Lord of the Rings Quotes</h1>
       <Posts />
     </div>
   );
